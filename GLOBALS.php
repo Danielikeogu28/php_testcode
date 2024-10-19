@@ -44,4 +44,19 @@ echo "<p>Original price: $" . $GLOBALS['productPrice'] . "</p>";
     $y = "world";
     $z = "$x $y";
     echo $z;
-?>
+    ?>
+
+    <?php
+    /*MAGIC FUNCTION IN PHP
+    __CLASS__  */
+
+   class MyClass{
+    public function displayClassName(){
+        echo"This is the class:" . __CLASS__;
+    }
+   };
+
+   $obj = new MyClass();
+   $obj->displayClassName();
+    
+    ?>

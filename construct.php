@@ -16,4 +16,13 @@
 
     $object = new Own('John');
     $object->sayHello();
+
+
+
+
+
+    $cars = array("SF10", "BMW", "Lambo",);
+        echo $cars [1] .",   " . $cars[0] ." , " . $cars[2] ;
+        echo $cars[1] . ", " . $cars[0] . ", " . $cars[2];
+    
 ?>
