@@ -51,12 +51,75 @@ echo "<p>Original price: $" . $GLOBALS['productPrice'] . "</p>";
     __CLASS__  */
 
    class MyClass{
-    public function displayClassName(){
+    public function displayClassName()
+    {
         echo"This is the class:" . __CLASS__;
     }
    };
 
    $obj = new MyClass();
    $obj->displayClassName();
+
+
+   //__FUNCTION__//
+
+   class MyValue{
+    public function sayHello(){
+        echo"This Funtion name is: " . __FUNCTION__;
+    }
+
+    public function displayClassName(){
+        echo"This is " . __FUNCTION__ . "the fuction inside a class";
+    }
+   }
+
+   $obj = new MyValue();
+   $obj->sayHello();
+   echo"<br>";
+   $obj->displayClassName();
     
-    ?>
+
+   // __METHOD__ FUNCTION //
+
+   class Fruit {
+
+    public function myMethod(){
+
+        echo "this method is: " . __METHOD__;
+    } 
+    public function anotherMethod(){
+        echo "This method is: " . __METHOD__;
+    }
+
+   }
+
+   $obj = new Fruit();
+   $obj->myMethod();
+   echo "<br>";
+   $obj->anotherMethod();
+
+
+
+
+
+   /* __NAMESPACE__ Method */
+//define a namespace//
+
+namespace MyArea;
+class Food{
+  public function myNamespace(){
+      echo "This is namespace is: " . __NAMESPACE__;
+  }
+
+  public function anotherNamespace(){
+      echo "This is namespace is: " . __NAMESPACE__;
+  }
+}
+
+$obj = new Food();
+$obj->myNamespace();
+echo "<br>";
+$obj->anotherNamespace(); 
+
+
+ ?>; 
