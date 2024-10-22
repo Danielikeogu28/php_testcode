@@ -18,4 +18,19 @@
 
     var_dump($x);
     var_dump($cars);
+
+
+
+
+
+    function string(){
+        static $y = 20;
+        echo $y;
+        $y--;
+    }
+    String();
+    echo " <br> ";
+    String();
+    echo" <br> ";
+    String();
 ?>

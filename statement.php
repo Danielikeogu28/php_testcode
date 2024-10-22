@@ -84,4 +84,60 @@ $car ="Ferrari SF10";
     default:
         echo "You probably own a car. ";
  }
+
+
+ ///////////////////////////////////////////////////////////
+
+/* WHILE LOOP */
+$number = 1;
+
+while ($number < 5 ){
+    echo "Number is: $number <br>";
+    $number++;
+};
+
+/* WHILE LOOP using a BREAK function */
+
+$card = 10;
+while ($card < 5){
+    if($card == 3) break;
+        echo $card;
+        $card++;
+    
+}
+
+ 
+///////////////////////////////////////////////////////////////
+
+/* do-while loop   */
+
+$i = 1;
+do{
+    echo "Number is: $i<br>";
+    $i++;
+}while ($i <= 5);
+
+
+
+///////////////////////////////////////////////////////////
+
+/* for loop 
+for (initialization; condition; increment/decrement) {
+    // Code to be executed for each iteration
+}
+*/
+
+for ($i = 1; $i <= 5; $i++){
+    echo "Iteration: $i   ";
+}
+
+
+/////////////////////////////////////////////////////////////
+
+/*foreach loop*/
+
+$colour = array("blue ", " red" , " yellow ");
+foreach ($colour as $x ){
+    echo $x;
+}
 ?>
