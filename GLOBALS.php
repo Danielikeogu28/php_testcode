@@ -108,11 +108,11 @@ echo "<p>Original price: $" . $GLOBALS['productPrice'] . "</p>";
 namespace MyArea;
 class Food{
   public function myNamespace(){
-      echo "This is namespace is: " . __NAMESPACE__;
+      echo "This namespace is: " . __NAMESPACE__;
   }
 
   public function anotherNamespace(){
-      echo "This is namespace is: " . __NAMESPACE__;
+      echo "This namespace is: " . __NAMESPACE__;
   }
 }
 
@@ -120,6 +120,42 @@ $obj = new Food();
 $obj->myNamespace();
 echo "<br>";
 $obj->anotherNamespace(); 
+
+
+
+
+    /*  __TRAIT__ Function   */
+
+    trait simpletrait {
+        public function showTraitName(){
+            echo "this trait is: " . __TRAIT__;
+        }
+    } 
+
+     class myTrait{
+        use simpletrait;
+     }
+    
+     $obj = new myTrait();
+     $obj->showTraitName();
+
+
+
+
+    // $_SERVER variable
+
+if($_SERVER["REQUEST_METHOD"] == "POST");
+
+$name = $_REQUEST["name"];
+
+if(empty($name)) {
+
+    echo"Name is empty";
+} else{
+    echo $name;
+}
+
+
 
 
  ?>; 

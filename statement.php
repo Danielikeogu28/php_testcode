@@ -2,10 +2,12 @@
 
 //IF statement 
 
+use function PHPSTORM_META\elementType;
+
 $username = "Smith";
 
 if ($username == "Smith"){
-    echo "Login successful. ";
+    echo "Login successful." ."\n";
 }
 
 
@@ -14,9 +16,9 @@ if ($username == "Smith"){
 
 $age = 40;
 if ($age >= 18){
-    echo "You are eligible to vote. ";
+    echo "You are eligible to vote." ."\n";
 } else{
-    echo "You are not eligible to vote. ";
+    echo "You are not eligible to vote." ."\n";
 }
    
 
@@ -36,13 +38,13 @@ $hasID = true;
 
 if ($age >= 18){
     if ($hasID == true){
-        echo "You are allowed to enter. ";
+        echo "You are allowed to enter." ."\n";
     }else{
-        echo "You need an ID to enter. ";
+        echo "You need an ID to enter." ."\n";
     } 
 
     } else{
-        echo "You are not old enough to enter. ";
+        echo "You are not old enough to enter." ."\n";
 
     }
 
@@ -70,19 +72,19 @@ switch (expression) {
 $car ="Ferrari SF10";
  switch($car){
     case "Aspark Owl ";
-        echo "this a luxury car. ";
+        echo "this a luxury car." ."\n";
         break;
     case "Ferrari SF10";
-        echo " the car is quite expensive. ";
+        echo "this car is quite expensive." ."\n";
         break;
     case "Revuelto";
-        echo "wow it's a Lamborgihin Revuelto. ";
+        echo "wow it's a Lamborgihin Revuelto." ."\n";
         break; 
     case "Mercedes Mayback. ";
-        echo " It's a Mayback. ";
+        echo " It's a Mayback." ."\n";
         break;
     default:
-        echo "You probably own a car. ";
+        echo "You probably own a car.\n";
  }
 
 
@@ -92,7 +94,7 @@ $car ="Ferrari SF10";
 $number = 1;
 
 while ($number < 5 ){
-    echo "Number is: $number <br>";
+    echo "Number is: $number \n";
     $number++;
 };
 
@@ -101,10 +103,19 @@ while ($number < 5 ){
 $card = 10;
 while ($card < 5){
     if($card == 3) break;
-        echo $card;
+        echo $card ."\n";
         $card++;
     
+};
+
+/*WHILE LOOP using a CONTINUE FUNCTION*/ 
+$i = 0;
+while ($i < 6){
+    $i++;
+    if($i == 3) continue;
+    echo $i ."\n";
 }
+
 
  
 ///////////////////////////////////////////////////////////////
@@ -113,7 +124,7 @@ while ($card < 5){
 
 $i = 1;
 do{
-    echo "Number is: $i<br>";
+    echo "Number is: $i \n";
     $i++;
 }while ($i <= 5);
 
@@ -128,7 +139,7 @@ for (initialization; condition; increment/decrement) {
 */
 
 for ($i = 1; $i <= 5; $i++){
-    echo "Iteration: $i   ";
+    echo "Iteration: $i \n";
 }
 
 
@@ -136,8 +147,11 @@ for ($i = 1; $i <= 5; $i++){
 
 /*foreach loop*/
 
-$colour = array("blue ", " red" , " yellow ");
+$colour = array("blue ", "red" , "yellow ");
 foreach ($colour as $x ){
-    echo $x;
-}
+    echo $x ."\n";
+};
+
+
+
 ?>
